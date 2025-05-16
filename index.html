@@ -39,11 +39,10 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    /* Remove pointer cursor on input/button container */
-    td.menu input, td.menu button {
+    /* Input styles - removed text-transform uppercase */
+    td.menu input {
       font-family: "ofelia-display", sans-serif;
       font-weight: 300;
-      text-transform: uppercase;
       font-size: 2.5em;
       letter-spacing: 0.1em;
       width: 80%;
@@ -61,12 +60,25 @@
       margin-bottom: 15px;
     }
 
+    /* Button styles with uppercase */
     td.menu button {
-      cursor: pointer;
+      font-family: "ofelia-display", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 2.5em;
+      letter-spacing: 0.1em;
+      width: 80%;
+      max-width: 500px;
+      padding: 10px;
       border: 2px solid black;
+      border-radius: 4px;
+      text-align: center;
       background-color: white;
       color: black;
+      cursor: pointer;
       transition: background-color 0.3s ease, color 0.3s ease;
+      display: inline-block;
+      margin-bottom: 15px;
     }
 
     td.menu button:hover {
@@ -77,36 +89,43 @@
 
     #error-message {
       color: black;
-      font-weight: 500;               /* a bit bolder but not too heavy */
+      font-weight: 500;
       font-family: "ofelia-display", sans-serif;
       font-size: 1.2em;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       margin-top: 10px;
       display: none;
+      padding: 0 10px;
     }
+
     /* Responsive adjustments for smaller screens */
     @media (max-width: 600px) {
-      td.menu a {
-        font-size: 1.5em;          /* Smaller, more readable on mobile */
-        padding: 12px 0;
+      td.menu {
+        padding: 10px 5px;
       }
 
-      td.menu {
-        padding: 15px 0;
+      td.menu input,
+      td.menu button {
+        font-size: 1.2em;
+        width: 90%;
+        max-width: 90%;
+        padding: 12px;
       }
 
       caption {
-        font-size: 1.5em;
-        padding: 0.3em;
+        font-size: 1.4em;
+        padding: 0.3em 0.5em;
+      }
+
+      #error-message {
+        font-size: 1em;
       }
 
       body {
         font-size: 16px;
       }
     }
-
-
   </style>
 </head>
 <body>
