@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+caption {
+    font-family: "ofelia-display", sans-serif; /* Use Ofelia Display font */
+    font-weight: 800; /* Use thin font weight */
+    font-style: italic;
+    font-size: 2em; /* Adjust the font size as needed */
+    padding: 0.5em;
+    border: 1px solid black;
+    text-align: left;
+} 
+
+td {
+    width: 33.33%; /* Set each column to occupy one-third of the table width */
+    border: 1px solid black; /* Add border for visualization */
+    padding: 10px; /* Add padding */
+    text-align: center; /* Align text to center */
+}
+
+/* Pantone 2024 palette-inspired highlights */
+.highlighted-reel {
+    background-color: #e1f5c3; /* Viva Magenta */
+    color: white;
+}
+
+.highlighted-cv {
+    background-color: #e1f5c3; /* Persimmon */
+    color: white;
+}
+
+.highlighted-cover {
+    background-color: #e1f5c3; /* Radiant Red */
+    color: white;
+}
+
+.highlighted-linkedin {
+    background-color: #E1A95F; /* Sundial */
+    color: black;
+}
+
+.highlighted-instagram {
+    background-color: #748C69; /* Watercress */
+    color: white;
+}
+
+.highlighted-about {
+    background-color: #1E4477; /* Strong Blue */
+    color: white;
+}
+
+.unHighlighted {
+    background-color: white;
+}
+
+.blackText {
+    color: black;
+}
+
+/* Apply styles to the menu item links */
+td.menu a {
+    font-family: "ofelia-display", sans-serif; /* Use Ofelia Display font */
+    font-weight: 300; /* Use thin font weight */
+    text-transform: uppercase; /* Capitalize text */
+    font-size: 2.5em; /* Adjust the font size as needed */
+    text-decoration: none; /* Remove underline from links */
+    color: black;
+    letter-spacing: 0.1em; /* Add space between characters */
+}
+
+/* Apply styles to submenu links */
+td.subMenu a {
+    font-family: "ofelia-display", sans-serif; /* Use Ofelia Display font */
+    font-weight: 300; /* Use thin font weight */
+    text-transform: uppercase; /* Capitalize text */
+    font-size: 2.5em; /* Adjust the font size as needed */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set color of links */
+    letter-spacing: 0.1em; /* Add space between characters */
+}
+
+/* Apply styles to the menu item links */
+td.content a {
+    font-family: "ofelia-display", sans-serif; /* Use Ofelia Display font */
+    font-weight: 300; /* Use thin font weight */
+    text-transform: uppercase; /* Capitalize text */
+    font-size: 2.5em; /* Adjust the font size as needed */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set color of links */
+    letter-spacing: 0.1em; /* Add space between characters */
+}
+
+td.menu input, td.menu button {
+  font-family: "ofelia-display", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.5em; /* smaller than 2.5em */
+  /* other styles */
+}
+
+/* Define the custom CSS styles for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "ofelia-display", sans-serif; /* Use Ofelia Display font with a fallback */
+    font-weight: 300; /* Use thin font weight */
+    text-transform: uppercase; /* Capitalize text */
+}
+
+h1 {
+    font-size: 2.5em; /* Set the font size for h1 */
+}
+
+h2 {
+    font-size: 2em; /* Set the font size for h2 */
+}
+
+h3 {
+    font-size: 1.8em; /* Set the font size for h3 */
+}
+

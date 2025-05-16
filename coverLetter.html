@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV - Erica Hetherington</title>
+  <link rel="stylesheet" href="https://use.typekit.net/srg7thw.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-family: "ofelia-display", sans-serif;
+      background-color: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    caption {
+      font-family: "ofelia-display", sans-serif;
+      font-weight: 800;
+      font-style: italic;
+      font-size: 2em;
+      padding: 0.5em;
+      border: 1px solid black;
+      text-align: left;
+    }
+
+    td.menu {
+      width: 100%;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 20px 0;
+      text-align: center;
+      background-color: white;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    td.menu a,
+    td.menu span {
+      font-family: "ofelia-display", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 2.5em;
+      text-decoration: none;
+      color: black;
+      letter-spacing: 0.1em;
+      display: inline-block;
+      width: 100%;
+      transition: color 0.3s ease;
+    }
+
+    /* Hover highlight for MENU */
+    td.menu.highlighted-menu:hover {
+      background-color: #ffd2d7; /* soft blue */
+    }
+
+    td.menu.highlighted-menu:hover a {
+      color: white;
+    }
+
+    /* No hover effect on current CV page, but same appearance */
+    td.menu.current {
+      background-color: white;
+    }
+
+    td.menu.current span {
+      color: black;
+      cursor: default;
+    }
+
+    td.content {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      font-weight: 300;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      text-align: left;
+      color: #111;
+    }
+
+    h2 {
+      font-weight: 800;
+      font-style: italic;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+
+    p, ul {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption></caption>
+    <tr>
+      <td class="menu highlighted-menu"><a href="home.html">Back to Menu</a></td>
+    </tr>
+    <tr>
+      <td class="menu current"><span>COVER LETTER</span></td>
+    </tr>
+    <tr>
+      <td class="content">
+        <h2>Erica Hetherington</h2>
+        <p><strong>Character Rigger & Technical Artist</strong></p>
+        <p>Email: erica@example.com | Phone: +61 1234 5678</p>
+
+        <h2>Professional Summary</h2>
+        <p>Creative and detail-oriented character rigger with experience in animation pipelines, specializing in technical rigging and character deformation.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

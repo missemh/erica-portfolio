@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - Erica Hetherington</title>
+  <link rel="stylesheet" href="https://use.typekit.net/srg7thw.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-family: "ofelia-display", sans-serif;
+      background-color: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td.menu {
+      width: 100%;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 20px 0;
+      text-align: center;
+      background-color: white;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    td.menu a,
+    td.menu span {
+      font-family: "ofelia-display", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 2.5em;
+      text-decoration: none;
+      color: black;
+      letter-spacing: 0.1em;
+      display: inline-block;
+      width: 100%;
+      transition: color 0.3s ease;
+    }
+
+    td.menu.highlighted-menu:hover {
+      background-color: #ffd2d7;
+    }
+
+    td.menu.highlighted-menu:hover a {
+      color: white;
+    }
+
+    td.menu.current span {
+      color: black;
+      cursor: default;
+    }
+
+    td.content {
+      padding: 40px 20px;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      color: #111;
+    }
+
+    .headshot {
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px; /* centers it and adds space below */
+    }
+
+
+    img.profile-pic {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border: 1px solid black;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 1.2em;
+      line-height: 1.6em;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption></caption>
+    <tr>
+      <td class="menu highlighted-menu"><a href="home.html">Back to Menu</a></td>
+    </tr>
+    <tr>
+      <td class="menu current"><span>ME</span></td>
+    </tr>
+    <tr>
+      <td class="content">
+        <img src="assets/images/headshot.jpg" alt="Erica Hetherington headshot" class="headshot">
+        <div class="contact-info">
+          <p><strong>Erica Hetherington</strong></p>
+          <p>erica.m.hetherington@gmail.com</p>
+          <p>+46 704 121 378</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

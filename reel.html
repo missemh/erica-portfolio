@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reel - Erica Hetherington</title>
+  <link rel="stylesheet" href="https://use.typekit.net/srg7thw.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-family: "ofelia-display", sans-serif;
+      background-color: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td.menu {
+      width: 100%;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 20px 0;
+      text-align: center;
+      background-color: white;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    td.menu a,
+    td.menu span {
+      font-family: "ofelia-display", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 2.5em;
+      text-decoration: none;
+      color: black;
+      letter-spacing: 0.1em;
+      display: inline-block;
+      width: 100%;
+      transition: color 0.3s ease;
+    }
+
+    td.menu.highlighted-menu:hover {
+      background-color: #ffd2d7;
+    }
+
+    td.menu.highlighted-menu:hover a {
+      color: white;
+    }
+
+    td.menu.current span {
+      color: black;
+      cursor: default;
+    }
+
+    td.content {
+      padding: 40px 20px;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      color: #111;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption></caption>
+    <tr>
+      <td class="menu highlighted-menu"><a href="home.html">Back to Menu</a></td>
+    </tr>
+    <tr>
+      <td class="menu current"><span>REEL</span></td>
+    </tr>
+    <tr>
+      <td class="content">
+        <div class="video-container">
+          <iframe src="https://player.vimeo.com/video/123456789" 
+                  allow="autoplay; fullscreen; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
