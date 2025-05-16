@@ -89,10 +89,51 @@
     td.highlighted-about:hover a {
       color: white;
     }
-    /* Responsive adjustments for smaller screens */
     @media (max-width: 600px) {
-      td.menu a {
-        font-size: 1.5em;          /* Smaller, more readable on mobile */
+      /* Permanent background colors for each highlighted cell */
+      td.highlighted-reel {
+        background-color: #e1f5c3 !important; /* Viva Magenta */
+        color: black !important;
+      }
+
+      td.highlighted-cv {
+        background-color: #ebe673 !important; /* Persimmon */
+        color: black !important;
+      }
+
+      td.highlighted-cover {
+        background-color: #ffe676 !important; /* Radiant Red */
+        color: black !important;
+      }
+
+      td.highlighted-linkedin {
+        background-color: #E1A95F !important; /* Sundial */
+        color: black !important;
+      }
+
+      td.highlighted-instagram {
+        background-color: #748C69 !important; /* Watercress */
+        color: black !important;
+      }
+
+      td.highlighted-about {
+        background-color: #ffe676 !important; /* Strong Blue */
+        color: black !important;
+      }
+
+      /* Remove hover effect on mobile to avoid confusion */
+      td.highlighted-reel:hover,
+      td.highlighted-cv:hover,
+      td.highlighted-cover:hover,
+      td.highlighted-linkedin:hover,
+      td.highlighted-instagram:hover,
+      td.highlighted-about:hover {
+        background-color: inherit;
+        color: inherit;
+      }
+      td.menu a,
+      td.menu span {
+        font-size: 1.5em; /* or your desired mobile size */
         padding: 12px 0;
       }
 
@@ -109,6 +150,7 @@
         font-size: 16px;
       }
     }
+
 
   </style>
 </head>
