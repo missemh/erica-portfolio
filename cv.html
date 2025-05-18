@@ -57,10 +57,14 @@
     td.menu.highlighted-menu:hover {
       background-color: #ffd2d7; /* soft blue */
     }
+    td.menu.highlighted-cv:hover {
+      background-color: #ebe673;
+    }
 
-    td.menu.highlighted-menu:hover a {
+    td.menu.highlighted-cv:hover a {
       color: white;
     }
+
 
     /* No hover effect on current CV page, but same appearance */
     td.menu.current {
@@ -126,16 +130,18 @@
       <td class="menu highlighted-menu"><a href="home.html">Back to Menu</a></td>
     </tr>
     <tr>
-      <td class="menu current"><span>CV</span></td>
+      <td class="menu highlighted-cv">
+        <a href="assets/pdfs/cv_ehetherington.pdf" download>Download CV</a>
+      </td>
     </tr>
     <tr>
       <td class="content">
-        <h2>Erica Hetherington</h2>
-        <p><strong>Character Rigger & Technical Artist</strong></p>
-        <p>Email: erica@example.com | Phone: +61 1234 5678</p>
-
-        <h2>Professional Summary</h2>
-        <p>Creative and detail-oriented character rigger with experience in animation pipelines, specializing in technical rigging and character deformation.</p>
+        <embed 
+          src="assets/pdfs/cv_ehetherington.pdf" 
+          type="application/pdf" 
+          width="100%" 
+          height="800px"
+        />
       </td>
     </tr>
   </table>
