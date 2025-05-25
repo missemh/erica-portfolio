@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Enter Password - Erica Hetherington</title>
+  <title>Erica Hetherington</title>
   <link rel="stylesheet" href="https://use.typekit.net/srg7thw.css" />
   <style>
     body {
@@ -39,131 +39,105 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    /* Input styles - removed text-transform uppercase */
-    td.menu input {
-      font-family: "ofelia-display", sans-serif;
-      font-weight: 300;
-      font-size: 2.5em;
-      letter-spacing: 0.1em;
-      width: 80%;
-      max-width: 500px;
-      padding: 10px;
-      border: 1px solid black;
-      border-radius: 4px;
-      text-align: center;
-      box-sizing: border-box;
-      background-color: white;
-      color: black;
-      cursor: text;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      display: inline-block;
-      margin-bottom: 15px;
-    }
-
-    /* Button styles with uppercase */
-    td.menu button {
+    td.menu a {
       font-family: "ofelia-display", sans-serif;
       font-weight: 300;
       text-transform: uppercase;
       font-size: 2.5em;
-      letter-spacing: 0.1em;
-      width: 80%;
-      max-width: 500px;
-      padding: 10px;
-      border: 2px solid black;
-      border-radius: 4px;
-      text-align: center;
-      background-color: white;
+      text-decoration: none;
       color: black;
-      cursor: pointer;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      letter-spacing: 0.1em;
       display: inline-block;
-      margin-bottom: 15px;
+      width: 100%;
+      transition: color 0.3s ease;
     }
 
-    td.menu button:hover {
-      background-color: #ffd2d7; /* Viva Magenta background on hover */
+    /* Hover color mapping */
+    td.highlighted-reel:hover {
+      background-color: #e1f5c3; /* Viva Magenta */
+    }
+
+    td.highlighted-pythontools:hover {
+      background-color: #ebe673; /* Persimmon */
+    }
+
+    td.highlighted-modelling:hover {
+      background-color: #ffe676;
+    }
+
+    td.highlighted-linkedin:hover {
+      background-color: #E1A95F; /* Sundial */
+    }
+
+    td.highlighted-instagram:hover {
+      background-color: #748C69; /* Watercress */
+    }
+
+    td.highlighted-about:hover {
+      background-color: #ffe676; /* Strong Blue */
+    }
+
+    /* Change link color on hover for contrast */
+    td.highlighted-linkedin:hover a {
+      color: black;
+    }
+
+    td.highlighted-reel:hover a,
+    td.highlighted-cv:hover a,
+    td.highlighted-cover:hover a,
+    td.highlighted-instagram:hover a,
+    td.highlighted-about:hover a {
       color: white;
-      border-color: #ffd2d7;
     }
-
-    #error-message {
-      color: black;
-      font-weight: 500;
-      font-family: "ofelia-display", sans-serif;
-      font-size: 1.2em;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-top: 10px;
-      display: none;
-      padding: 0 10px;
-    }
-
-    /* Responsive adjustments for smaller screens */
     @media (max-width: 600px) {
-      td.menu {
-        padding: 10px 5px;
+      td.menu a,
+      td.menu span {
+        font-size: 1.5em; /* or your desired mobile size */
+        padding: 12px 0;
       }
 
-      td.menu input,
-      td.menu button {
-        font-size: 1.2em;
-        width: 90%;
-        max-width: 90%;
-        padding: 12px;
+      td.menu {
+        padding: 15px 0;
       }
 
       caption {
-        font-size: 1.4em;
-        padding: 0.3em 0.5em;
-      }
-
-      #error-message {
-        font-size: 1em;
+        font-size: 1.5em;
+        padding: 0.3em;
       }
 
       body {
         font-size: 16px;
       }
     }
+
+
   </style>
 </head>
 <body>
   <table>
     <caption></caption>
     <tr>
-      <td class="menu">
-        <input type="password" id="password" placeholder="Enter password" autocomplete="off" />
+      <td class="menu highlighted-reel"><a href="rigging.html" rel="noopener noreferrer">Rigging</a></td>
+    </tr>
+    <tr>
+      <td class="menu highlighted-pythontools"><a href="pythontools.html" rel="noopener noreferrer">Python Tools</a></td>
+    </tr>
+    <tr>
+      <td class="menu highlighted-modelling"><a href="modelling.html" rel="noopener noreferrer">Modelling</a></td>
+    </tr>
+    <tr>
+      <td class="menu highlighted-linkedin">
+        <a href="https://www.linkedin.com/in/erica-hetherington" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </td>
     </tr>
     <tr>
-      <td class="menu">
-        <button id="submit-btn">Enter</button>
-        <div id="error-message">Incorrect password, try again.</div>
+      <td class="menu highlighted-instagram">
+        <a href="https://www.instagram.com/erica.hetherington" target="_blank" rel="noopener noreferrer">Instagram</a>
       </td>
     </tr>
+    <tr>
+      <td class="menu highlighted-about"><a href="about.html">ABOUT</a></td>
+    </tr>
   </table>
-
-  <script>
-    const passwordInput = document.getElementById('password');
-    const submitBtn = document.getElementById('submit-btn');
-    const errorMessage = document.getElementById('error-message');
-
-    function checkPassword() {
-      const pw = passwordInput.value;
-      if (pw === 'SherbetLemon') { // Replace with your real password
-        window.location.href = 'home.html'; // Or your destination page
-      } else {
-        errorMessage.style.display = 'block';
-      }
-    }
-
-    submitBtn.addEventListener('click', checkPassword);
-    passwordInput.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') {
-        checkPassword();
-      }
-    });
-  </script>
 </body>
 </html>

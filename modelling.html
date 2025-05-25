@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reel - Erica Hetherington</title>
+  <title>Portfolio - Erica Hetherington</title>
   <link rel="stylesheet" href="https://use.typekit.net/srg7thw.css" />
   <style>
     body {
@@ -108,24 +108,42 @@
   <table>
     <caption></caption>
     <tr>
-      <td class="menu highlighted-menu"><a href="home.html">Back to Menu</a></td>
+      <td class="menu highlighted-menu"><a href="index.html">Back to Menu</a></td>
     </tr>
     <tr>
-      <td class="menu current"><span>REEL</span></td>
+      <td class="menu current"><span>modelling</span></td>
     </tr>
     <tr>
       <td class="content">
-        <!-- ✅ REPLACED THE OLD VIDEO CONTAINER HERE -->
-        <div style="padding:56.25% 0 0 0;position:relative;">
-          <iframe src="https://player.vimeo.com/video/1085501912?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                  frameborder="0" 
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
-                  style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                  title="Witch"></iframe>
+        <!-- Images grid -->
+        <div style="
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          max-width: 720px;
+          margin: 0 auto;
+        ">
+          <img src="assets/images/beanie_girl_00.jpg" alt="Beanie Girl 0" style="width:100%; border-radius:6px; object-fit: cover;" />
+          <img src="assets/images/beanie_girl_01.jpg" alt="Beanie Girl 1" style="width:100%; border-radius:6px; object-fit: cover;" />
+          <img src="assets/images/beanie_girl_02.jpg" alt="Beanie Girl 2" style="width:100%; border-radius:6px; object-fit: cover;" />
+          <img src="assets/images/beanie_girl_03.jpg" alt="Beanie Girl 3" style="width:100%; border-radius:6px; object-fit: cover;" />
+          <!-- New 2 images -->
+          <img src="assets/images/space_girl_00.jpg" alt="Space Girl 0" style="width:100%; border-radius:6px; object-fit: cover;" />
+          <img src="assets/images/space_girl_01.jpg" alt="Space Girl 1" style="width:100%; border-radius:6px; object-fit: cover;" />
         </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
+
+        <!-- Video below images -->
+        <div style="max-width: 720px; margin: 0px auto 0 auto; position: relative; padding-bottom: 28%; height: 0; overflow: hidden; border-radius: 6px;">
+          <iframe 
+            src="https://player.vimeo.com/video/1087527801?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+            title="Toaster Model"></iframe>
+        </div>
+
       </td>
-    </tr>
+
   </table>
 </body>
 </html>

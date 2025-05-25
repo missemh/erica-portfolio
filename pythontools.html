@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Erica Hetherington</title>
+  <link rel="stylesheet" href="https://use.typekit.net/srg7thw.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-family: "ofelia-display", sans-serif;
+      background-color: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td.menu {
+      width: 100%;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 20px 0;
+      text-align: center;
+      background-color: white;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    td.menu a,
+    td.menu span {
+      font-family: "ofelia-display", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 2.5em;
+      text-decoration: none;
+      color: black;
+      letter-spacing: 0.1em;
+      display: inline-block;
+      width: 100%;
+      transition: color 0.3s ease;
+    }
+
+    td.menu.highlighted-menu:hover {
+      background-color: #ffd2d7;
+    }
+
+    td.menu.highlighted-menu:hover a {
+      color: white;
+    }
+
+    td.menu.current span {
+      color: black;
+      cursor: default;
+    }
+
+    td.content {
+      padding: 40px 20px;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      color: #111;
+    }
+
+    .video-container-vertical {
+      position: relative;
+      aspect-ratio: 9 / 16;
+      width: 100%;
+      max-width: 400px; /* optional: limits max width */
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .video-container-vertical iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (max-width: 600px) {
+      td.menu a,
+      td.menu span {
+        font-size: 1.5em;
+        padding: 12px 0;
+      }
+
+      td.menu {
+        padding: 15px 0;
+      }
+
+      caption {
+        font-size: 1.5em;
+        padding: 0.3em;
+      }
+
+      body {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption></caption>
+    <tr>
+      <td class="menu highlighted-menu"><a href="index.html">Back to Menu</a></td>
+    </tr>
+    <tr>
+      <td class="menu current"><span>Python Tools</span></td>
+    </tr>
+    <tr>
+      <td class="content">
+        <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: flex-start;">
+
+          <!-- Video 1 -->
+          <div style="width: 360px; display: flex; flex-direction: column;">
+            <div style="margin-bottom: 1em; min-height: 90px; font-weight: 300; font-size: 1em; line-height: 1.3;">
+              <strong>Simple tool to place facial joints.</strong><br>
+              Analyzes model and generates initial placement.<br>
+              Orients joints automatically.
+            </div>
+            <div style="position: relative; padding-top: 177.78%; height: 0; overflow: hidden;">
+              <iframe src="https://player.vimeo.com/video/1087522053?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                      title="Facial Joint Tool"></iframe>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div style="width: 360px; display: flex; flex-direction: column;">
+            <div style="margin-bottom: 1em; min-height: 90px; font-weight: 300; font-size: 1em; line-height: 1.3;">
+              <strong>Fully Python-coded joint-based eye rig I developed myself.</strong><br>
+              Skins the eye by mathematically processing the mesh’s vertices.
+            </div>
+            <div style="position: relative; padding-top: 177.78%; height: 0; overflow: hidden;">
+              <iframe src="https://player.vimeo.com/video/1087523585?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                      title="Eye Rigging Tool"></iframe>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div style="width: 360px; display: flex; flex-direction: column;">
+            <div style="margin-bottom: 1em; min-height: 90px; font-weight: 300; font-size: 1em; line-height: 1.3;">
+              <strong>Eyebrow rigging tool testing.</strong><br>
+              Code and UI developed by me.
+            </div>
+            <div style="position: relative; padding-top: 177.78%; height: 0; overflow: hidden;">
+              <iframe src="https://player.vimeo.com/video/1087526050?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                      title="Eyebrow Rigging Tool"></iframe>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div style="width: 360px; display: flex; flex-direction: column;">
+            <div style="margin-bottom: 1em; min-height: 90px; font-weight: 300; font-size: 1em; line-height: 1.3;">
+              <strong>UI design</strong>
+            </div>
+            <div style="position: relative; padding-top: 177.78%; height: 0; overflow: hidden;">
+              <iframe src="https://player.vimeo.com/video/1087527010?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                      title="UI Design"></iframe>
+            </div>
+          </div>
+
+        </div>
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </td>
+
+
+    </tr>
+  </table>
+</body>
+</html>
