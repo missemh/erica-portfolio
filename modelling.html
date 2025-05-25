@@ -57,7 +57,7 @@
     }
 
     td.content {
-      padding: 20px 20px 30px 20px; /* less bottom padding */
+      padding: 20px;
       text-align: center;
       font-weight: 300;
       font-size: 1.1em;
@@ -65,12 +65,28 @@
       color: #111;
     }
 
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .image-grid img {
+      display: block;
+      width: 100%;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
     .video-container {
       position: relative;
-      padding-bottom: 56.25%; /* Correct for 16:9 aspect ratio */
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
       height: 0;
       overflow: hidden;
-      max-width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
       border-radius: 6px;
     }
 
@@ -82,21 +98,11 @@
       height: 100%;
       border: 0;
     }
-    .video-balanced {
-        position: relative;
-        padding-bottom: 100%;
-        height: 0;
-        overflow: hidden;
-        max-width: 720px;
-        margin: 0 auto; /* no vertical gap */
-        border-radius: 6px;
-    }
-
 
     @media (max-width: 600px) {
       td.menu a,
       td.menu span {
-        font-size: 1.5em; /* or your desired mobile size */
+        font-size: 1.5em;
         padding: 12px 0;
       }
 
@@ -104,16 +110,10 @@
         padding: 15px 0;
       }
 
-      caption {
-        font-size: 1.5em;
-        padding: 0.3em;
-      }
-
       body {
         font-size: 16px;
       }
     }
-
   </style>
 </head>
 <body>
@@ -128,37 +128,28 @@
     <tr>
       <td class="content">
         <!-- Images grid -->
-        <div class="image-grid" style="
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 20px;
-          max-width: 720px;
-          margin: 0 auto 0 auto; /* changed from 0 auto 10px auto */
-        ">
-
-          <img src="assets/images/beanie_girl_00.jpg" alt="Beanie Girl 0" style="width:100%; border-radius:6px; object-fit: cover;" />
-          <img src="assets/images/beanie_girl_01.jpg" alt="Beanie Girl 1" style="width:100%; border-radius:6px; object-fit: cover;" />
-          <img src="assets/images/beanie_girl_02.jpg" alt="Beanie Girl 2" style="width:100%; border-radius:6px; object-fit: cover;" />
-          <img src="assets/images/beanie_girl_03.jpg" alt="Beanie Girl 3" style="width:100%; border-radius:6px; object-fit: cover;" />
-          <img src="assets/images/space_girl_00.jpg" alt="Space Girl 0" style="width:100%; border-radius:6px; object-fit: cover;" />
-          <img src="assets/images/space_girl_01.jpg" alt="Space Girl 1" style="width:100%; border-radius:6px; object-fit: cover;" />
-          <img src="assets/images/space_girl_02.jpg" alt="Space Girl 2" style="width:100%; border-radius:6px; object-fit: cover;" />
-          <img src="assets/images/space_girl_03.jpg" alt="Space Girl 3" style="width:100%; border-radius:6px; object-fit: cover;" />
+        <div class="image-grid">
+          <img src="assets/images/beanie_girl_00.jpg" alt="Beanie Girl 0" />
+          <img src="assets/images/beanie_girl_01.jpg" alt="Beanie Girl 1" />
+          <img src="assets/images/beanie_girl_02.jpg" alt="Beanie Girl 2" />
+          <img src="assets/images/beanie_girl_03.jpg" alt="Beanie Girl 3" />
+          <img src="assets/images/space_girl_00.jpg" alt="Space Girl 0" />
+          <img src="assets/images/space_girl_01.jpg" alt="Space Girl 1" />
+          <img src="assets/images/space_girl_02.jpg" alt="Space Girl 2" />
+          <img src="assets/images/space_girl_03.jpg" alt="Space Girl 3" />
         </div>
 
-        <!-- Video below images -->
-        <div class="video-container video-balanced">
+        <!-- Video below images with no gap -->
+        <div class="video-container">
           <iframe 
-            src="https://player.vimeo.com/video/1087527801?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+            src="https://player.vimeo.com/video/1087527801?title=0&byline=0&portrait=0" 
             frameborder="0" 
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
-            title="Toaster Model"></iframe>
+            allow="autoplay; fullscreen; picture-in-picture"
+            title="Toaster Model">
+          </iframe>
         </div>
       </td>
     </tr>
-
-
   </table>
 </body>
 </html>
-
