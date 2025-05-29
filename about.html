@@ -65,12 +65,20 @@
       color: #111;
     }
 
+    .content strong {
+      font-weight: bold !important;
+    }
+
     .headshot {
       max-width: 300px;
       height: auto;
       display: block;
       margin: 0 auto 20px;
       border: 1px solid black;
+    }
+
+    ul li {
+    margin-bottom: 1em;
     }
 
     .bio-text {
@@ -120,38 +128,15 @@
       <td class="content">
         <img src="assets/images/headshot.jpg" alt="Erica Hetherington headshot" class="headshot">
         <div class="bio-text">
-          <p><strong>Erica Hetherington</strong></p>
-          <p><strong>Australia / Sweden </strong></p>
-          <p>
-            There are moments we all have in life that change our trajectory, moments that in hindsight, change
-            everything. It sounds dramatic, and it should, because it is. One of those moments happened to me
-            several years ago, and it’s very likely the reason I’m writing this letter to you now.
-          </p>
-          <p>
-            What happened wasn’t dramatic at all. I half-heartedly accepted an invitation to visit my 3D artist
-            friend’s office. I had no idea that what I saw that day would be so inspiring it would eventually lead me
-            to move to a town outside the Arctic Circle in northern Sweden, become proficient in Python, graduate
-            from AnimSchool, and dedicate my every waking hour to getting good at a job I hadn’t even known
-            existed.
-          </p>
-          <p>
-            I think that begins to paint a picture of who I am. I have an
-            endless sense of enthusiasm, I’m self-reliant, and I genuinely love what I do to the point where I literally
-            jump for joy when I solve a problem. When I’m given a task, or give one to myself, I do whatever it
-            takes to solve it, and to solve it as well as I possibly can. I don’t pretend to know everything, but I will
-            always give everything to learn.
-          </p>
-          <p>
-            When I finished my facial rig at AnimSchool, there were things I wasn’t happy with. It relied on the
-            Maya interpolator, which I found unstable when triggering blend shapes, and the minor mouth
-            controls often needed correction in certain expressions. So, I built my own triggering system with utility
-            nodes and wrote code to place no fewer than 176 blend shapes onto the curves in the mouth rig,
-            layered under the hood, to correct the shapes directly.
-          </p>
-          <p>
-            In the words of my Advanced Rigging teacher at AnimSchool, I’m “one of the best students he has ever
-            taught” and was “born to do this.”
-          </p>
+          <p><strong>Erica Hetherington</strong><br>Australia / Sweden</p>
+          <p style="margin-top: 1.5em;"><strong>A list of facts about me:</strong></p>
+          <ul style="text-align:left; max-width: 700px; margin: 0 auto 20px;">
+            <li>In June, I worked for 2 weeks at Haymaker VFX company to help them retopologise 3 sculpted characters. In that time I proactively created two Python tools to improve their workflow: the Edge Flow Tool and the UV Transfer Tool. See my GitHub link for code and the Python Tools page for demos.</li>
+            <li>I learned to code Python in 6 months. Now I rarely do anything manually unless I am exploring how to solve a new problem.</li>
+            <li>I literally jump for joy when I figure somthing out. When given a task (or when I set one myself), I do whatever it takes to solve it as well as possible. I don’t pretend to know everything, but I always give my all to learn.</li>
+            <li>After finishing my facial rig at AnimSchool, I wasn’t satisfied with some parts. So, I built my own triggering system using utility nodes and wrote code to place over 176 blend shapes onto the curves in the mouth rig to directly correct the shapes.</li>
+            <li>In the words of my Advanced Rigging teacher at AnimSchool, I’m “one of the best students he has ever taught” and was “born to do this.”</li>
+          </ul>
           <div class="contact-info">
             <p>erica.m.hetherington@gmail.com</p>
             <p>+46 704 121 378</p>
